@@ -1,0 +1,29 @@
+{
+  "kit": {
+    "version": "latest",
+    "dirs": false
+  },
+  "site": {
+    "id": null,
+    "name": "Kit test",
+    "description": "Welcome to Kit test",
+    "url": "https://your-site-domain.com",
+    "keyswords": "publishkit, blogging, markdown"
+  },
+  "og": {
+    "image": "https://publishkit.dev/attachements/og-image.png"
+  },
+  "plugins": {
+    "theme": "@default",
+    "header": true,
+    "darkmode": true,
+    "navbar": true,
+    "toc": true,
+    "search": true,
+    "social": true
+  },
+  "social": {
+    "github": "https://publishkit.dev",
+    "discord": "https://publishkit.dev"
+  }
+}

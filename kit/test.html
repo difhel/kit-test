@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>test</title>
+  <meta charset="utf-8" />
+  <meta name="url" content="https://your-site-domain.com" />
+  <meta name="title" content="test" />
+  <meta name="description" content="Welcome to Kit test" />
+  <meta name="image" content="https://publishkit.dev/attachements/og-image.png" />
+  <meta name="name" content="Kit test" />
+  <meta name="keyswords" content="publishkit, blogging, markdown" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:image" content="https://publishkit.dev/attachements/og-image.png" />
+  <meta property="og:url" content="https://your-site-domain.com" />
+  <meta property="og:title" content="test" />
+  <meta property="og:description" content="Welcome to Kit test" />
+  <meta property="og:site_name" content="Kit test" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/publishkit/kit@latest/init.js"></script>
+</head>
+
+<body>
+  <template id="frontmatter">
+    {}
+  </template>
+  <template id="content">
+    <pre><code class="language-sh">pkg update
+pkg upgrade
+pkg i git
+pkg i gh
+</code></pre>
+    <p><strong>Android</strong>: /storage/emulated/0/obsidian
+      <strong>PC</strong>: C://Users/.../Desktop/obsidian
+    </p>
+    <pre><code class="language-sh">cd /storage/emulated/0/obsidian
+git init
+git remote add origin ССЫЛКА
+git pull
+</code></pre>
+    <p><a href="http://Obsidian.sh" class="external-link">Obsidian.sh</a></p>
+    <pre><code class="language-sh">#!/bin/bash
+cd /data/data/com.termux/files/home/storage/shared/obsidian
+a=$(git pull &amp;&amp; git add -A &amp;&amp; git commit -a -m "android vault backup: `date +'%Y-%m-%d %H-%M-%S'`" &amp;&amp; git push origin main &amp;&amp; git pull origin main)
+termux-notification --content Success
+termux-toast $a
+</code></pre>
+    <pre><code class="language-SH"># step by step
+cd /data/data/com.termux
+cd files
+# error: mkdir НАЗВАНИЕ_ПАПКИ
+cd home
+cd storage
+cd shared
+cd obsidian
+
+КОПИРОВАНИЕ:
+cp СТАРЫЙ_ПУТЬ НОВЫЙ_ПУТЬ
+cp /storage/emulated/0/obsidian/obsidian.sh /data/data/com.termux/.shortcuts/
+</code></pre>
+    <p>Колауты</p>
+    <blockquote>
+      <p>[!info] Test
+        Lorem ipsum dolor sit ammet
+        [[test link]]</p>
+    </blockquote>
+    <p>![[test embedded link]]</p>
+
+  </template>
+</body>
+
+</html>
