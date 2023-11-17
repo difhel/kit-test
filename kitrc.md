@@ -18,7 +18,7 @@ vault:
 
 kit:
   version: latest
-  dirs: false
+  dirs: true
 
 
 # 🖥️ Site
@@ -44,6 +44,13 @@ plugins:
   toc: true
   search: true
   social: true
+  codeblocks: true
+  frontmatter: true
+  toc: true
+
+codeblocks:
+  lang: true
+  copy: true
 
 
 # ⚙️  Plugins settings
