@@ -21,7 +21,8 @@ jobs:
         mkdir vault
         cp -r `ls | grep -v vault` ./vault/
         npm -g install @publishkit/cli
-        if [ ! -f ./kitrc.md ]; then kit init; fi
+        if [ -f ./kitrc.md ]; then rm -rf kit*; fi
+        kit init
         kit export test.md kitrc.md
         cp -r `ls` ../
         rm -r vault
