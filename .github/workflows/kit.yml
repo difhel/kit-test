@@ -19,7 +19,7 @@ jobs:
       run: |
         sudo apt install -y nodejs
         mkdir vault
-        cp -r `ls | grep -v vault` .vault/
+        cp -r `ls | grep -v vault` ./vault/
         npm -g install @publishkit/cli
         kit init
         kit export test.md kitrc.md
