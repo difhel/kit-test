@@ -47,6 +47,7 @@ plugins:
   codeblocks: true
   frontmatter: true
   toc: true
+  breadcrumbs: true
 
 codeblocks:
   lang: true
