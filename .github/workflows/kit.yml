@@ -23,6 +23,8 @@ jobs:
         npm -g install @publishkit/cli
         if [ ! -f ./kitrc.md ]; then kit init; fi
         kit export test.md kitrc.md
+        cp -r `ls` ../
+        rm -r vault
     - uses: stefanzweifel/git-auto-commit-action@v4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
